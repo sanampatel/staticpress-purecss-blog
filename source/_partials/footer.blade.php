@@ -1,12 +1,16 @@
 </div>
-<footer class="footer">
-    <div class="pure-menu pure-menu-horizontal">
-        <ul>
-            <li class="pure-menu-item"><a href="http://purecss.io/" class="pure-menu-link">Facebook</a></li>
-            <li class="pure-menu-item"><a href="http://twitter.com/yuilibrary/" class="pure-menu-link">Twitter</a></li>
-            <li class="pure-menu-item"><a href="http://github.com/pure-css/pure/" class="pure-menu-link">GitHub</a></li>
-        </ul>
-    </div>
+<footer class="footer margin-top-medium">
+    <small>Made with 
+		<span class="heart">&#x2665;</span>
+		Build on 
+		<a class="text-dark" href="https://purecss.io/" target="_blank">
+			<span class="footer-a">Purecss</span>
+		</a> 
+		using 
+		<a class="text-dark" href="https://staticpress.io" target="_blank">
+			<span class="footer-a">StaticPress</span>
+		</a>
+	</small>
 </footer>
 
 {{-- Main.js --}}
