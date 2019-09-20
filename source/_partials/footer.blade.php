@@ -1,15 +1,17 @@
 </div>
 <footer class="footer margin-top-medium">
-    <small>Made with 
-		<span class="heart">&#x2665;</span>
-		Build on 
-		<a class="text-dark" href="https://purecss.io/" target="_blank">
-			<span class="footer-a">Purecss</span>
-		</a> 
-		using 
-		<a class="text-dark" href="https://staticpress.io" target="_blank">
-			<span class="footer-a">StaticPress</span>
-		</a>
+    <small>
+    	<span class="span">
+		    Made with <i class="fa pulse">&#x2665;</i>
+			Build on 
+			<a class="text-dark" href="https://purecss.io/" target="_blank">
+				<span class="footer-a">Purecss</span>
+			</a> 
+			using 
+			<a class="text-dark" href="https://staticpress.io" target="_blank">
+				<span class="footer-a">StaticPress</span>
+			</a>
+		</span>
 	</small>
 </footer>
 
