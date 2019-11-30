@@ -37,20 +37,25 @@ collections:
       - {label: "SEO Description", name: "seodescription", widget: "string", default: SEO Description}
       - {label: "Tags", name: "tags", widget: "relation", collection: 'tags', searchFields: ["title"], displayFields: ["title"], valueField: "title", multiple: true, default: ""}
       - {label: "Categories", name: "categories", widget: "relation", collection: 'categories', searchFields: ["title"], displayFields: ["title"], valueField: "title", default: ""}
-      - {label: "Image Filename", name: "image", widget: "image", required: true}
+      - {label: "Image Filename", name: "image", widget: "image"}
       - {label: "Comments", name: "comments", widget: "boolean", default: true}
-      - {label: "Featured", name: "featured", widget: "boolean", default: false}
       - {label: "IsPosts", name: "isPosts", widget: "hidden", default: true}
+      - {label: "Description", name: "description", widget: "markdown"}
       - {label: "Body", name: "body", widget: "markdown"}
   - name: "settings"
     label: "Settings"
     label_singular: "Setting"
     folder: "source/_settings"
-    create: true
+    create: false
     slug: "{{slug}}"
     fields:
+      - {label: "Title", name: "title", widget: "string", default: "Setting"}
+      - {label: "SEOTitle", name: "seotitle", widget: "string", default: "SEO Title"}
+      - {label: "SEO Keywords", name: "seokeywords", widget: "string", default: SEO Keywords}
+      - {label: "SEO Description", name: "seodescription", widget: "string", default: SEO Description}
       - {label: "About author", name: "aboutauthor", widget: "markdown", default: "About author"}
-      - {label: "Logo", name: "logo", markdown: "image"}
+      - {label: "Post page title", name: "postpagetitle", widget: "string", default: "Post page title", required: true}
+      - {label: "Logo", name: "logo", markdown: "image", required: true}
       - {label: "FbLink", name: "fblink", widget: "string"}
       - {label: "TwitterLink:", name: "twitterlink", widget: "string"}
       - {label: "InstagramLink", name: "instagramlink", widget: "string"}

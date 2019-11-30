@@ -1,5 +1,12 @@
 @extends('_layouts.master')
 
+@section('head')
+	<title>{{ seo("tag", ucwords($page->name()), "", "", "") }} | {{ $page->sitename }}</title>
+	<meta name="keywords" content="Tag, {{ seo("tag", $page->name(), "", "", "") }}, {{ seo("tag", $page->name(), "", "", "") }} tag">
+
+	<meta name="description" content="Post under tag {{ seo("tag", $page->name(), "", "", "") }}.">
+@endsection
+
 @section('content')
 	<div class="content pure-u-1 pure-u-md-3-4">
 		<h2>

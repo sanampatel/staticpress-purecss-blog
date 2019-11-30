@@ -5,6 +5,12 @@ pagination:
 ---
 @extends('_layouts.master')
 
+@section('head')
+    <title>{{ $settings->setting->seotitle}} | {{ $page->sitename }}</title> 
+    <meta name="keywords" content="{{ $settings->setting->seokeywords }}">
+    <meta name="description" content="{{ $settings->setting->seodescription }}">
+@endsection
+
 @section('content') 
 
 	    <div class="content pure-u-1 pure-u-md-3-4">

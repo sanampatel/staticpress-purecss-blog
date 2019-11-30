@@ -8,9 +8,6 @@
                 <li class="nav-item">
                     <a class="pure-button" href="./">Home</a>
                 </li>
-                <li class="nav-item">
-                    <a class="pure-button" href="{{ $page->mainUrl }}/contact/">Contact</a>
-                </li>
             </ul>
         </nav>
 

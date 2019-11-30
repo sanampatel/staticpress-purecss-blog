@@ -1,7 +1,12 @@
 @extends('_layouts.master')
 
-@section('content')
+@section('head')
+	<title>{{ $page->seotitle ? $page->seotitle : $page->title}} | {{ $page->sitename }}</title>
+	<meta name="keywords" content="{{ $page->seokeywords ? $page->seokeywords : seo("post", $page->tags, $page->categories, $page->title, "keywords") }}">
+	<meta name="description" content="{{ $page->seodescription ? $page->seodescription : seo("post", "", "", $page->description, "description") }}">
+@endsection
 
+@section('content')
 
 	<div class="content pure-u-1 pure-u-md-3-4">
 		
